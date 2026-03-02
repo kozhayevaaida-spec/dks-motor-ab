@@ -3,10 +3,103 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DKS Motor AB</title>
+  <title>DKS Motor AB | Bilverkstad</title>
+  <meta name="description" content="Bilverkstad med service och reparationer. Öppettider, adress och kontakt." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>DKS Motor AB – test</h1>
-  <p>Om du ser detta funkar GitHub Pages.</p>
+  <!-- Topbar -->
+  <header class="topbar">
+    <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-controls="drawer" aria-expanded="false">
+      <span class="burger" aria-hidden="true"></span>
+    </button>
+
+    <div class="brand">
+      <div class="brand__title">DKS Motor AB</div>
+      <div class="brand__tag">Bilverkstad</div>
+    </div>
+
+    <a class="topbar__cta" href="tel:+46700000000">Ring</a>
+  </header>
+
+  <!-- Drawer (side menu) -->
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__header">
+      <div>
+        <div class="drawer__title">Meny</div>
+        <div class="drawer__subtitle">Navigera</div>
+      </div>
+      <button class="icon-btn" id="closeBtn" aria-label="Stäng meny">
+        ✕
+      </button>
+    </div>
+
+    <nav class="drawer__nav">
+      <a class="drawer__link is-active" href="index.html">Welcome</a>
+      <a class="drawer__link" href="tjanster.html">Tjänster</a>
+      <a class="drawer__link" href="boka.html">Boka</a>
+      <a class="drawer__link" href="kontakt.html">Kontakt</a>
+      <a class="drawer__link" href="om-oss.html">Om oss</a>
+    </nav>
+
+    <div class="drawer__footer">
+      <div class="small muted">Telefon:</div>
+      <a class="drawer__contact" href="tel:+46700000000">070-000 00 00</a>
+      <div class="small muted">E-post:</div>
+      <a class="drawer__contact" href="mailto:info@dksmotor.se">info@dksmotor.se</a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="page">
+    <section class="hero">
+      <div class="hero__inner">
+        <h1>Välkommen till DKS Motor AB</h1>
+        <p class="lead">
+          Kort presentation av företaget här. Exempel: Vi erbjuder service, felsökning och reparationer för de flesta bilmärken.
+          Snabb återkoppling och tydlig kommunikation.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h2>Öppettider</h2>
+            <ul class="list">
+              <li><span>Mån–Fre</span><span>08:00–17:00</span></li>
+              <li><span>Lör</span><span>Stängt</span></li>
+              <li><span>Sön</span><span>Stängt</span></li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h2>Adress</h2>
+            <p class="muted">Lägg in adress här</p>
+            <p class="small muted">Tips: Vi lägger in Google Maps senare.</p>
+          </article>
+
+          <article class="card">
+            <h2>Kontakt</h2>
+            <p><a class="link" href="tel:+46700000000">070-000 00 00</a></p>
+            <p><a class="link" href="mailto:info@dksmotor.se">info@dksmotor.se</a></p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="boka.html">Boka / Förfrågan</a>
+          <a class="btn btn--ghost" href="kontakt.html">Kontakta oss</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <span class="muted small">© <span id="year"></span> DKS Motor AB</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
