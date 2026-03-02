@@ -17,12 +17,10 @@ function closeDrawer() {
   menuBtn.setAttribute("aria-expanded", "false");
 }
 
-menuBtn.addEventListener("click", openDrawer);
-closeBtn.addEventListener("click", closeDrawer);
-overlay.addEventListener("click", closeDrawer);
+menuBtn?.addEventListener("click", openDrawer);
+closeBtn?.addEventListener("click", closeDrawer);
+overlay?.addEventListener("click", closeDrawer);
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeDrawer();
 });
-
-document.getElementById("year").textContent = new Date().getFullYear();

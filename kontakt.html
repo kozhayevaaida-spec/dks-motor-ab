@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DKS Motor AB | Kontakta oss</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-controls="drawer" aria-expanded="false">
+      <span class="burger" aria-hidden="true"><span></span></span>
+    </button>
+    <div class="brand">DKS Motor AB</div>
+    <a class="cta-book" href="boka.html">Boka bilservice</a>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__header">
+    <div><div class="drawer__title">Meny</div><div class="small muted">Navigera</div></div>
+    <button class="icon-btn" id="closeBtn" aria-label="Stäng meny">✕</button>
+  </div>
+  <nav class="drawer__nav">
+    <a class="drawer__link" href="index.html">Startsida</a>
+    <a class="drawer__link" href="tjanster.html">Våra tjänster</a>
+    <a class="drawer__link is-active" href="kontakt.html">Kontakta oss</a>
+    <a class="drawer__link" href="boka.html">Boka tid</a>
+    <a class="drawer__link" href="om-oss.html">Om oss</a>
+  </nav>
+  <div class="drawer__footer">
+    <div class="small muted">Adress</div>
+    <div>Hammarhagsvägen 10, 149 50 Nynäshamn</div>
+  </div>
+</aside>
+
+<main class="container">
+  <h1>Kontakta oss</h1>
+  <div class="grid-2">
+    <div class="card">
+      <p><strong>Adress:</strong> Hammarhagsvägen 10, 149 50 Nynäshamn</p>
+      <p><strong>Telefon:</strong> <span class="muted">Lägg in nummer</span></p>
+      <p><strong>E-post:</strong> <span class="muted">Lägg in mejl</span></p>
+    </div>
+    <div class="card">
+      <p class="muted">Här kan vi lägga ett kontaktformulär senare (gratis med t.ex. Google Form-länk).</p>
+    </div>
+  </div>
+  <div class="footer small">© DKS Motor AB</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
