@@ -13,20 +13,27 @@
     <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-controls="drawer" aria-expanded="false">
       <span class="burger" aria-hidden="true"><span></span></span>
     </button>
+
     <div class="logo-area">
       <img src="logo.jpeg" alt="DKS Motor AB" class="logo">
       <div class="brand">DKS Motor AB</div>
     </div>
+
     <a class="cta-book" href="boka.html">Boka bilservice</a>
   </div>
 </header>
 
 <div class="overlay" id="overlay" hidden></div>
+
 <aside class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer__header">
-    <div><div class="drawer__title">Meny</div><div class="small muted">Navigera</div></div>
+    <div>
+      <div class="drawer__title">Meny</div>
+      <div class="small muted">Navigera</div>
+    </div>
     <button class="icon-btn" id="closeBtn" aria-label="Stäng meny">✕</button>
   </div>
+
   <nav class="drawer__nav">
     <a class="drawer__link" href="index.html">Startsida</a>
     <a class="drawer__link is-active" href="tjanster.html">Våra tjänster</a>
@@ -34,26 +41,172 @@
     <a class="drawer__link" href="boka.html">Boka tid</a>
     <a class="drawer__link" href="om-oss.html">Om oss</a>
   </nav>
+
   <div class="drawer__footer">
     <div class="small muted">Adress</div>
-    <div>Hammarhagsvägen 10, 149 50 Nynäshamn</div>
+    <div>Hammarhagsvägen 30, 149 50 Nynäshamn</div>
   </div>
 </aside>
 
 <main class="container">
-  <h1>Våra tjänster</h1>
-  <div class="card">
-  <p class="muted">Vi erbjuder följande tjänster:</p>
-  <ul>
-    <li>Service & reparation av alla bilmärken</li>
-    <li>Service & reparation av tunga fordon</li>
-    <li>AC-service</li>
-    <li>Framvagnsinställning</li>
-    <li>Däckservice</li>
-    <li>Svetsarbeten</li>
-    <li>Motor- & växellådsreparation</li>
-  </ul>
-</div>
+  <section class="services-hero">
+    <div class="services-hero__content">
+      <span class="services-badge">Våra tjänster</span>
+      <h1>Service och reparation för alla bilmärken</h1>
+      <p>
+        På DKS Motor AB erbjuder vi professionell hjälp med service, felsökning och reparationer
+        för både personbilar och tunga fordon. Vi fokuserar på kvalitet, tydlighet och personlig service.
+      </p>
+      <div class="services-hero__buttons">
+        <a href="boka.html" class="cta-book">Boka tid</a>
+        <a href="kontakt.html" class="secondary-btn">Kontakta oss</a>
+      </div>
+    </div>
+
+    <div class="services-hero__image">
+      <img src="verkstad-hero.jpg" alt="Bilverkstad och service hos DKS Motor AB">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>Det här hjälper vi dig med</h2>
+      <p>
+        Vi erbjuder ett brett utbud av verkstadstjänster för att hålla ditt fordon i gott skick året runt.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <img src="bilservice.jpg" alt="Bilservice" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Bilservice</h3>
+          <p>
+            Regelbunden service för att bilen ska fungera säkert, effektivt och hålla längre.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="reparation.jpg" alt="Bilreparation" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Reparationer</h3>
+          <p>
+            Vi utför reparationer av olika typer av fel och ser till att bilen kommer tillbaka i bra skick.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="ac-service.jpg" alt="AC-service" class="service-card__image">
+        <div class="service-card__body">
+          <h3>AC-service</h3>
+          <p>
+            Kontroll, service och underhåll av bilens klimatanläggning för bättre komfort året runt.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="framvagn.jpg" alt="Framvagnsinställning" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Framvagnsinställning</h3>
+          <p>
+            Rätt inställning förbättrar körkänslan, minskar däckslitage och ger bättre stabilitet.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="dackservice.jpg" alt="Däckservice" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Däckservice</h3>
+          <p>
+            Hjälp med däckbyte, kontroll och annan service för säkrare körning i alla säsonger.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="svets.jpg" alt="Svetsarbeten" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Svetsarbeten</h3>
+          <p>
+            Vi utför svetsarbeten vid behov och hjälper till med hållbara lösningar för ditt fordon.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="motor.jpg" alt="Motorreparation" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Motorreparation</h3>
+          <p>
+            Felsökning och reparation av motorproblem för att återställa prestanda och funktion.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="vaxellada.jpg" alt="Växellådsreparation" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Växellådsreparation</h3>
+          <p>
+            Vi hjälper till med problem i växellådan och arbetar för pålitlig och säker drift.
+          </p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="tunga-fordon.jpg" alt="Service för tunga fordon" class="service-card__image">
+        <div class="service-card__body">
+          <h3>Tunga fordon</h3>
+          <p>
+            Vi erbjuder även service och reparation för tunga fordon med fokus på kvalitet och tillgänglighet.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="section-heading">
+      <h2>Varför välja DKS Motor AB?</h2>
+    </div>
+
+    <div class="why-us__grid">
+      <div class="why-us__item">
+        <h3>Alla bilmärken</h3>
+        <p>Vi hjälper kunder med många olika typer av fordon och behov.</p>
+      </div>
+
+      <div class="why-us__item">
+        <h3>Personligt bemötande</h3>
+        <p>Hos oss får du tydlig kontakt och service anpassad efter dig och ditt fordon.</p>
+      </div>
+
+      <div class="why-us__item">
+        <h3>Snabb hjälp</h3>
+        <p>Vi arbetar för att ge dig snabb och smidig service när du behöver det.</p>
+      </div>
+
+      <div class="why-us__item">
+        <h3>Bra priser</h3>
+        <p>Vi erbjuder professionell hjälp till konkurrenskraftiga priser.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-section__card">
+      <h2>Behöver din bil service eller reparation?</h2>
+      <p>
+        Skicka en bokningsförfrågan till oss så hjälper vi dig vidare.
+      </p>
+      <a href="boka.html" class="cta-book">Boka bilservice</a>
+    </div>
+  </section>
+
   <div class="footer small">© DKS Motor AB</div>
 </main>
 
