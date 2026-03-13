@@ -255,3 +255,19 @@ RESPONSIVE
   }
 
 }
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo{
+height:45px;
+}
+
+.brand{
+color:#e30613;
+font-size:28px;
+font-weight:800;
+letter-spacing:1px;
+}
