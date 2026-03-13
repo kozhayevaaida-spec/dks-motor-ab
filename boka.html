@@ -39,12 +39,32 @@
 
 <main class="container">
   <h1>Boka tid</h1>
+
   <div class="card">
     <p class="muted">
-      Här kopplar vi in bokning. Gratis sätt: en Google Form där kunden fyller i bil/ärende/önskad tid,
-      och ni får det direkt på mejl.
+      Skicka en bokningsförfrågan via formuläret nedan, så återkommer vi så snart som möjligt.
     </p>
+
+    <form class="booking-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Tack! Din bokningsförfrågan har skickats.');">
+      <label for="name">Namn</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Telefonnummer</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">E-post</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Typ av service</label>
+      <input type="text" id="service" name="service" placeholder="Exempel: AC-service, däckservice..." required>
+
+      <label for="message">Meddelande</label>
+      <textarea id="message" name="message" rows="5" placeholder="Skriv gärna registreringsnummer, önskat datum eller annan info"></textarea>
+
+      <button type="submit" class="cta-book" style="margin-top:12px;">Skicka bokningsförfrågan</button>
+    </form>
   </div>
+
   <div class="footer small">© DKS Motor AB</div>
 </main>
 
