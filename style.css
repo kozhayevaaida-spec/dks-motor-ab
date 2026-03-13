@@ -343,4 +343,14 @@ letter-spacing:1px;
 iframe{
 border-radius:10px;
 margin-top:10px;
+}.map-container {
+  margin-top: 16px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
 }
