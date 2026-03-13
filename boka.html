@@ -1,76 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DKS Motor AB | Boka tid</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DKS Motor AB</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <header class="topbar">
-  <div class="container topbar__inner">
-    <button class="icon-btn" id="menuBtn" aria-label="Öppna meny" aria-controls="drawer" aria-expanded="false">
-      <span class="burger" aria-hidden="true"><span></span></span>
-    </button>
-   <div class="logo-area">
-  <img src="logo.jpeg" alt="DKS Motor AB" class="logo">
-  <div class="brand">DKS Motor AB</div>
+
+<div class="container topbar__inner">
+
+<button class="icon-btn" id="menuBtn" aria-label="Öppna meny">
+<span class="burger"><span></span></span>
+</button>
+
+<div class="logo-area">
+<img src="logo.jpeg" alt="DKS Motor AB" class="logo">
+<div class="brand">DKS Motor AB</div>
 </div>
-    <a class="cta-book" href="boka.html">Boka bilservice</a>
-  </div>
+
+<a class="cta-book" href="boka.html">Boka bilservice</a>
+
+</div>
+
 </header>
 
+
+<!-- MENY -->
+
 <div class="overlay" id="overlay" hidden></div>
-<aside class="drawer" id="drawer" aria-hidden="true">
-  <div class="drawer__header">
-    <div><div class="drawer__title">Meny</div><div class="small muted">Navigera</div></div>
-    <button class="icon-btn" id="closeBtn" aria-label="Stäng meny">✕</button>
-  </div>
-  <nav class="drawer__nav">
-    <a class="drawer__link" href="index.html">Startsida</a>
-    <a class="drawer__link" href="tjanster.html">Våra tjänster</a>
-    <a class="drawer__link" href="kontakt.html">Kontakta oss</a>
-    <a class="drawer__link is-active" href="boka.html">Boka tid</a>
-    <a class="drawer__link" href="om-oss.html">Om oss</a>
-  </nav>
-  <div class="drawer__footer">
-    <div class="small muted">Adress</div>
-    <div>Hammarhagsvägen 10, 149 50 Nynäshamn</div>
-  </div>
+
+<aside class="drawer" id="drawer">
+
+<div class="drawer__header">
+
+<div class="drawer__title">Meny</div>
+
+<button class="icon-btn" id="closeBtn">✕</button>
+
+</div>
+
+<nav class="drawer__nav">
+
+<a class="drawer__link" href="index.html">Startsida</a>
+<a class="drawer__link" href="tjanster.html">Våra tjänster</a>
+<a class="drawer__link" href="kontakt.html">Kontakta oss</a>
+<a class="drawer__link" href="boka.html">Boka tid</a>
+<a class="drawer__link" href="om-oss.html">Om oss</a>
+
+</nav>
+
 </aside>
 
+
 <main class="container">
-  <h1>Boka tid</h1>
 
-  <div class="card">
-    <p class="muted">
-      Skicka en bokningsförfrågan via formuläret nedan, så återkommer vi så snart som möjligt.
-    </p>
 
-    <form class="booking-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Tack! Din bokningsförfrågan har skickats.');">
-      <label for="name">Namn</label>
-      <input type="text" id="name" name="name" required>
+<section class="section">
 
-      <label for="phone">Telefonnummer</label>
-      <input type="tel" id="phone" name="phone" required>
+<h1>BILSERVICE OCH REPARATION</h1>
 
-      <label for="email">E-post</label>
-      <input type="email" id="email" name="email" required>
+<h2>Din lokala bilverkstad i Nynäshamn</h2>
 
-      <label for="service">Typ av service</label>
-      <input type="text" id="service" name="service" placeholder="Exempel: AC-service, däckservice..." required>
+<p>
+DKS Motor AB erbjuder service och reparation av alla bilmärken samt service och reparation av tunga fordon.
+</p>
 
-      <label for="message">Meddelande</label>
-      <textarea id="message" name="message" rows="5" placeholder="Skriv gärna registreringsnummer, önskat datum eller annan info"></textarea>
+<p>
+Snabb service • Bra priser • Personligt bemötande
+</p>
 
-      <button type="submit" class="cta-book" style="margin-top:12px;">Skicka bokningsförfrågan</button>
-    </form>
-  </div>
+</section>
 
-  <div class="footer small">© DKS Motor AB</div>
+
+<section class="section">
+
+<div class="card">
+
+<h2>Välkommen!</h2>
+
+<p>
+Få <strong>10 % rabatt på första servicen</strong> hos oss.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Lite kort om oss</h2>
+
+<div class="card">
+
+<p>
+Vi arbetar med service och reparation av alla bilmärken och erbjuder även service för tunga fordon.
+Hos oss kan du få hjälp med AC-service, framvagnsinställning, däckservice,
+svetsarbeten samt motor- och växellådsreparationer.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Våra öppettider</h2>
+
+<div class="grid-2">
+
+<div class="card">
+
+<h3>Ordinarie öppettider</h3>
+
+<p>Måndag – Fredag: 08:00 – 18:00</p>
+<p>Lördag: 09:00 – 14:00</p>
+<p>Söndag: Stängt</p>
+
+</div>
+
+<div class="card">
+
+<h3>Avvikande öppettider</h3>
+
+<p>Röda dagar: Stängt</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Adress & Kontakt</h2>
+
+<div class="card">
+
+<p><strong>Adress:</strong> Hammarhagsvägen 30, 149 50 Nynäshamn</p>
+
+<p><strong>E-post:</strong> dksmotorab@gmail.com</p>
+
+<br>
+
+<p><strong>Janne:</strong> 072-872 45 29</p>
+<p><strong>Sebbe:</strong> 073-642 64 61</p>
+<p><strong>Kai:</strong> 073-896 52 43</p>
+
+</div>
+
+</section>
+
 </main>
 
+
+<footer class="footer">
+
+<p>© DKS Motor AB</p>
+
+</footer>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
