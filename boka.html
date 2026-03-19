@@ -21,11 +21,27 @@
       <div class="brand">DKS Motor AB</div>
     </div>
 
-    <a class="cta-book" href="boka.html">Boka bilservice</a>
+    <div class="header-actions">
+      <div class="language-switcher">
+        <button class="lang-btn" id="langToggle" aria-label="Byt språk">
+          🌐 <span id="currentLang">SV</span>
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+          <button type="button" data-lang="sv">Svenska</button>
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="es">Español</button>
+          <button type="button" data-lang="ru">Русский</button>
+          <button type="button" data-lang="ar">العربية</button>
+          <button type="button" data-lang="zh">中文</button>
+        </div>
+      </div>
+
+      <a class="cta-book" href="boka.html" data-i18n="book_service">Boka bilservice</a>
+    </div>
 
   </div>
 </header>
-
 
 <div class="overlay" id="overlay" hidden></div>
 
@@ -33,86 +49,76 @@
 
   <div class="drawer__header">
     <div>
-      <div class="drawer__title">Meny</div>
-      <div class="small muted">Navigera</div>
+      <div class="drawer__title" data-i18n="menu">Meny</div>
+      <div class="small muted" data-i18n="navigate">Navigera</div>
     </div>
 
     <button class="icon-btn" id="closeBtn" aria-label="Stäng meny">✕</button>
   </div>
 
   <nav class="drawer__nav">
-
-    <a class="drawer__link" href="index.html">Startsida</a>
-    <a class="drawer__link" href="tjanster.html">Våra tjänster</a>
-    <a class="drawer__link" href="kontakt.html">Kontakta oss</a>
-    <a class="drawer__link is-active" href="boka.html">Boka tid</a>
-    <a class="drawer__link" href="om-oss.html">Om oss</a>
-
+    <a class="drawer__link" href="index.html" data-i18n="home">Startsida</a>
+    <a class="drawer__link" href="tjanster.html" data-i18n="services">Våra tjänster</a>
+    <a class="drawer__link" href="kontakt.html" data-i18n="contact">Kontakta oss</a>
+    <a class="drawer__link is-active" href="boka.html" data-i18n="book_time">Boka tid</a>
+    <a class="drawer__link" href="om-oss.html" data-i18n="about">Om oss</a>
   </nav>
 
   <div class="drawer__footer">
-    <div class="small muted">Adress</div>
-    <div>Hammarhagsvägen 30, 149 50 Nynäshamn</div>
+    <div class="small muted" data-i18n="address_label">Adress</div>
+    <div data-i18n="address_value">Hammarhagsvägen 30, 149 50 Nynäshamn</div>
   </div>
 
 </aside>
 
-
 <main class="container">
 
-<h1>Boka bilservice</h1>
+  <h1 data-i18n="booking_title">Boka bilservice</h1>
 
-<div class="card">
+  <div class="card">
+    <p data-i18n="booking_intro">
+      Skicka en bokningsförfrågan via formuläret nedan så återkommer vi så snart som möjligt.
+    </p>
+  </div>
 
-<p>
-Skicka en bokningsförfrågan via formuläret nedan så återkommer vi så snart som möjligt.
-</p>
+  <div class="card">
+    <form
+      class="booking-form"
+      action="https://formsubmit.co/dksmotorab@gmail.com"
+      method="POST"
+    >
 
-</div>
+      <input type="hidden" name="_subject" value="Ny bokningsförfrågan från hemsidan">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://kozhayevaaida-spec.github.io/dks-motor-ab/tack.html">
 
+      <label for="name" data-i18n="form_name_label">Namn</label>
+      <input id="name" type="text" name="Namn" placeholder="Ditt namn" data-i18n-placeholder="form_name_placeholder" required>
 
-<div class="card">
+      <label for="phone" data-i18n="form_phone_label">Telefon</label>
+      <input id="phone" type="tel" name="Telefon" placeholder="Telefonnummer" data-i18n-placeholder="form_phone_placeholder" required>
 
-<form
-class="booking-form"
-action="https://formsubmit.co/dksmotorab@gmail.com"
-method="POST"
->
+      <label for="email" data-i18n="form_email_label">E-post</label>
+      <input id="email" type="email" name="E-post" placeholder="E-postadress" data-i18n-placeholder="form_email_placeholder" required>
 
-<input type="hidden" name="_subject" value="Ny bokningsförfrågan från hemsidan">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://kozhayevaaida-spec.github.io/dks-motor-ab/tack.html">
+      <label for="reg" data-i18n="form_reg_label">Registreringsnummer</label>
+      <input id="reg" type="text" name="Registreringsnummer" placeholder="Bilens registreringsnummer" data-i18n-placeholder="form_reg_placeholder">
 
-<label>Namn</label>
-<input type="text" name="Namn" placeholder="Ditt namn" required>
+      <label for="service" data-i18n="form_service_label">Typ av service</label>
+      <input id="service" type="text" name="Typ av service" placeholder="t.ex. service, AC-service, däckservice" data-i18n-placeholder="form_service_placeholder">
 
-<label>Telefon</label>
-<input type="tel" name="Telefon" placeholder="Telefonnummer" required>
+      <label for="message" data-i18n="form_message_label">Meddelande</label>
+      <textarea id="message" name="Meddelande" placeholder="Beskriv vad du behöver hjälp med" data-i18n-placeholder="form_message_placeholder"></textarea>
 
-<label>E-post</label>
-<input type="email" name="E-post" placeholder="E-postadress" required>
+      <button type="submit" class="cta-book" data-i18n="form_submit">Skicka bokningsförfrågan</button>
 
-<label>Registreringsnummer</label>
-<input type="text" name="Registreringsnummer" placeholder="Bilens registreringsnummer">
+    </form>
+  </div>
 
-<label>Typ av service</label>
-<input type="text" name="Typ av service" placeholder="t.ex. service, AC-service, däckservice">
-
-<label>Meddelande</label>
-<textarea name="Meddelande" placeholder="Beskriv vad du behöver hjälp med"></textarea>
-
-<button type="submit" class="cta-book">Skicka bokningsförfrågan</button>
-
-</form>
-
-</div>
-
-
-<div class="footer small">© DKS Motor AB</div>
+  <div class="footer small">© DKS Motor AB</div>
 
 </main>
-
 
 <script src="script.js"></script>
 

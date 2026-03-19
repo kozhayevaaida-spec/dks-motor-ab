@@ -19,7 +19,24 @@
       <div class="brand">DKS Motor AB</div>
     </div>
 
-    <a class="cta-book" href="boka.html">Boka bilservice</a>
+    <div class="header-actions">
+      <div class="language-switcher">
+        <button class="lang-btn" id="langToggle" aria-label="Byt språk">
+          🌐 <span id="currentLang">SV</span>
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+          <button type="button" data-lang="sv">Svenska</button>
+          <button type="button" data-lang="en">English</button>
+          <button type="button" data-lang="es">Español</button>
+          <button type="button" data-lang="ru">Русский</button>
+          <button type="button" data-lang="ar">العربية</button>
+          <button type="button" data-lang="zh">中文</button>
+        </div>
+      </div>
+
+      <a class="cta-book" href="boka.html" data-i18n="book_service">Boka bilservice</a>
+    </div>
   </div>
 </header>
 
@@ -28,38 +45,38 @@
 <aside class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer__header">
     <div>
-      <div class="drawer__title">Meny</div>
-      <div class="small muted">Navigera</div>
+      <div class="drawer__title" data-i18n="menu">Meny</div>
+      <div class="small muted" data-i18n="navigate">Navigera</div>
     </div>
     <button class="icon-btn" id="closeBtn" aria-label="Stäng meny">✕</button>
   </div>
 
   <nav class="drawer__nav">
-    <a class="drawer__link" href="index.html">Startsida</a>
-    <a class="drawer__link is-active" href="tjanster.html">Våra tjänster</a>
-    <a class="drawer__link" href="kontakt.html">Kontakta oss</a>
-    <a class="drawer__link" href="boka.html">Boka tid</a>
-    <a class="drawer__link" href="om-oss.html">Om oss</a>
+    <a class="drawer__link" href="index.html" data-i18n="home">Startsida</a>
+    <a class="drawer__link is-active" href="tjanster.html" data-i18n="services">Våra tjänster</a>
+    <a class="drawer__link" href="kontakt.html" data-i18n="contact">Kontakta oss</a>
+    <a class="drawer__link" href="boka.html" data-i18n="book_time">Boka tid</a>
+    <a class="drawer__link" href="om-oss.html" data-i18n="about">Om oss</a>
   </nav>
 
   <div class="drawer__footer">
-    <div class="small muted">Adress</div>
-    <div>Hammarhagsvägen 30, 149 50 Nynäshamn</div>
+    <div class="small muted" data-i18n="address_label">Adress</div>
+    <div data-i18n="address_value">Hammarhagsvägen 30, 149 50 Nynäshamn</div>
   </div>
 </aside>
 
 <main class="container">
   <section class="services-hero">
     <div class="services-hero__content">
-      <span class="services-badge">Våra tjänster</span>
-      <h1>Service och reparation för alla bilmärken</h1>
-      <p>
+      <span class="services-badge" data-i18n="services_badge">Våra tjänster</span>
+      <h1 data-i18n="services_hero_title">Service och reparation för alla bilmärken</h1>
+      <p data-i18n="services_hero_text">
         På DKS Motor AB erbjuder vi professionell hjälp med service, felsökning och reparationer
         för både personbilar och tunga fordon. Vi fokuserar på kvalitet, tydlighet och personlig service.
       </p>
       <div class="services-hero__buttons">
-        <a href="boka.html" class="cta-book">Boka tid</a>
-        <a href="kontakt.html" class="secondary-btn">Kontakta oss</a>
+        <a href="boka.html" class="cta-book" data-i18n="book_time">Boka tid</a>
+        <a href="kontakt.html" class="secondary-btn" data-i18n="contact">Kontakta oss</a>
       </div>
     </div>
 
@@ -70,8 +87,8 @@
 
   <section class="section">
     <div class="section-heading">
-      <h2>Det här hjälper vi dig med</h2>
-      <p>
+      <h2 data-i18n="services_help_title">Det här hjälper vi dig med</h2>
+      <p data-i18n="services_help_text">
         Vi erbjuder ett brett utbud av verkstadstjänster för att hålla ditt fordon i gott skick året runt.
       </p>
     </div>
@@ -80,8 +97,8 @@
       <article class="service-card">
         <img src="bilservice.jpg" alt="Bilservice" class="service-card__image">
         <div class="service-card__body">
-          <h3>Bilservice</h3>
-          <p>
+          <h3 data-i18n="service_1_title">Bilservice</h3>
+          <p data-i18n="service_1_text">
             Regelbunden service för att bilen ska fungera säkert, effektivt och hålla längre.
           </p>
         </div>
@@ -90,8 +107,8 @@
       <article class="service-card">
         <img src="reparation.jpg" alt="Bilreparation" class="service-card__image">
         <div class="service-card__body">
-          <h3>Reparationer</h3>
-          <p>
+          <h3 data-i18n="service_2_title">Reparationer</h3>
+          <p data-i18n="service_2_text">
             Vi utför reparationer av olika typer av fel och ser till att bilen kommer tillbaka i bra skick.
           </p>
         </div>
@@ -100,8 +117,8 @@
       <article class="service-card">
         <img src="ac-service.jpg" alt="AC-service" class="service-card__image">
         <div class="service-card__body">
-          <h3>AC-service</h3>
-          <p>
+          <h3 data-i18n="service_3_title">AC-service</h3>
+          <p data-i18n="service_3_text">
             Kontroll, service och underhåll av bilens klimatanläggning för bättre komfort året runt.
           </p>
         </div>
@@ -110,8 +127,8 @@
       <article class="service-card">
         <img src="framvagn.jpg" alt="Framvagnsinställning" class="service-card__image">
         <div class="service-card__body">
-          <h3>Framvagnsinställning</h3>
-          <p>
+          <h3 data-i18n="service_4_title">Framvagnsinställning</h3>
+          <p data-i18n="service_4_text">
             Rätt inställning förbättrar körkänslan, minskar däckslitage och ger bättre stabilitet.
           </p>
         </div>
@@ -120,8 +137,8 @@
       <article class="service-card">
         <img src="dackservice.jpg" alt="Däckservice" class="service-card__image">
         <div class="service-card__body">
-          <h3>Däckservice</h3>
-          <p>
+          <h3 data-i18n="service_5_title">Däckservice</h3>
+          <p data-i18n="service_5_text">
             Hjälp med däckbyte, kontroll och annan service för säkrare körning i alla säsonger.
           </p>
         </div>
@@ -130,8 +147,8 @@
       <article class="service-card">
         <img src="svets.jpg" alt="Svetsarbeten" class="service-card__image">
         <div class="service-card__body">
-          <h3>Svetsarbeten</h3>
-          <p>
+          <h3 data-i18n="service_6_title">Svetsarbeten</h3>
+          <p data-i18n="service_6_text">
             Vi utför svetsarbeten vid behov och hjälper till med hållbara lösningar för ditt fordon.
           </p>
         </div>
@@ -140,8 +157,8 @@
       <article class="service-card">
         <img src="motor.jpg" alt="Motorreparation" class="service-card__image">
         <div class="service-card__body">
-          <h3>Motorreparation</h3>
-          <p>
+          <h3 data-i18n="service_7_title">Motorreparation</h3>
+          <p data-i18n="service_7_text">
             Felsökning och reparation av motorproblem för att återställa prestanda och funktion.
           </p>
         </div>
@@ -150,8 +167,8 @@
       <article class="service-card">
         <img src="vaxellada.jpg" alt="Växellådsreparation" class="service-card__image">
         <div class="service-card__body">
-          <h3>Växellådsreparation</h3>
-          <p>
+          <h3 data-i18n="service_8_title">Växellådsreparation</h3>
+          <p data-i18n="service_8_text">
             Vi hjälper till med problem i växellådan och arbetar för pålitlig och säker drift.
           </p>
         </div>
@@ -160,8 +177,8 @@
       <article class="service-card">
         <img src="tunga-fordon.jpg" alt="Service för tunga fordon" class="service-card__image">
         <div class="service-card__body">
-          <h3>Tunga fordon</h3>
-          <p>
+          <h3 data-i18n="service_9_title">Tunga fordon</h3>
+          <p data-i18n="service_9_text">
             Vi erbjuder även service och reparation för tunga fordon med fokus på kvalitet och tillgänglighet.
           </p>
         </div>
@@ -171,39 +188,39 @@
 
   <section class="why-us">
     <div class="section-heading">
-      <h2>Varför välja DKS Motor AB?</h2>
+      <h2 data-i18n="why_us_title">Varför välja DKS Motor AB?</h2>
     </div>
 
     <div class="why-us__grid">
       <div class="why-us__item">
-        <h3>Alla bilmärken</h3>
-        <p>Vi hjälper kunder med många olika typer av fordon och behov.</p>
+        <h3 data-i18n="why_1_title">Alla bilmärken</h3>
+        <p data-i18n="why_1_text">Vi hjälper kunder med många olika typer av fordon och behov.</p>
       </div>
 
       <div class="why-us__item">
-        <h3>Personligt bemötande</h3>
-        <p>Hos oss får du tydlig kontakt och service anpassad efter dig och ditt fordon.</p>
+        <h3 data-i18n="why_2_title">Personligt bemötande</h3>
+        <p data-i18n="why_2_text">Hos oss får du tydlig kontakt och service anpassad efter dig och ditt fordon.</p>
       </div>
 
       <div class="why-us__item">
-        <h3>Snabb hjälp</h3>
-        <p>Vi arbetar för att ge dig snabb och smidig service när du behöver det.</p>
+        <h3 data-i18n="why_3_title">Snabb hjälp</h3>
+        <p data-i18n="why_3_text">Vi arbetar för att ge dig snabb och smidig service när du behöver det.</p>
       </div>
 
       <div class="why-us__item">
-        <h3>Bra priser</h3>
-        <p>Vi erbjuder professionell hjälp till konkurrenskraftiga priser.</p>
+        <h3 data-i18n="why_4_title">Bra priser</h3>
+        <p data-i18n="why_4_text">Vi erbjuder professionell hjälp till konkurrenskraftiga priser.</p>
       </div>
     </div>
   </section>
 
   <section class="cta-section">
     <div class="cta-section__card">
-      <h2>Behöver din bil service eller reparation?</h2>
-      <p>
+      <h2 data-i18n="services_cta_title">Behöver din bil service eller reparation?</h2>
+      <p data-i18n="services_cta_text">
         Skicka en bokningsförfrågan till oss så hjälper vi dig vidare.
       </p>
-      <a href="boka.html" class="cta-book">Boka bilservice</a>
+      <a href="boka.html" class="cta-book" data-i18n="book_service">Boka bilservice</a>
     </div>
   </section>
 
